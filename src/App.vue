@@ -1,9 +1,10 @@
 <script setup>
-import main from './components/main.vue'
+import login from './components/login.vue'
 
 </script>
 
 <template>
+  
   <!-- Navbar Section -->
    <nav class="navbar">
   <div class="logo-section">
@@ -127,6 +128,8 @@ import main from './components/main.vue'
     All rights reserved.&copy;2024
   </div>
 </footer>
+
+
 </template>
 
 <style scoped>
