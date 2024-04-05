@@ -6,7 +6,8 @@
     <div class="body">
         <div class="container">
     <div class="header">
-       <header>Login</header>
+        <img src="./assets/logos4.png" alt="logo">
+       <header>Sign up</header>
     </div>
     <form >
         <div class="inner">
@@ -15,11 +16,11 @@
             <label for="password">Password</label>
             <input type="password" placeholder="Enter your password" style="margin-bottom: 2px;">
             <h4 style="font-size: 10px;"><a href="#">forgot password?</a></h4>
-            <button>login</button>
+            <button>submit</button>
         </div>
     </form>
     <div class="bottom-text">
-        <h4><a href="#">Sign Up</a></h4>
+        <h4>Already have an account?<a href="#">login</a></h4>
     </div>
   </div> 
 </div>
@@ -101,6 +102,7 @@ button{
     font-size: 13px;
     margin-left: 40px;
     border-radius: 10px;
+    
 }
 
 </style>
