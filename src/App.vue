@@ -9,97 +9,101 @@ import login from './components/login.vue'
    <nav class="navbar">
   <div class="logo-section">
     <a class="navbar-brand" href="#">
-     <h1>Muse</h1> 
+     <h2>Muse</h2> 
     </a>
   </div>
   <div class="end">
-    <button type="button" class="btn2 btn-primary">events</button>
-    <button type="button" class="btn btn-outline-primary">sign-up</button>
-    <img src="./assets/UserAvatar.svg" alt="" width="30" height="24" class="d-inline-block align-text-top"> 
-     <div class="sign-in"><a href="">Sign in</a>
-  </div></div>
+    <ul>
+      <li>
+        <a href="#">Events <img src="./assets/Events.svg" alt="event icon" style="width: 14px;"></a>
+        <a href="#">Sign up<img src="./assets/sign-up.svg" alt="event icon" style="width: 14px;"></a>
+        <a href="#">Sign in<img src="./assets/sign-in.svg" alt="event icon" style="width: 14px;"></a>
+      </li>
+    </ul>
+  </div>
  </nav>
 
-<!-- Banner Section -->
-<div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel" >
-  <div class="carousel-indicators">
-    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
-    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+<!-- Hero Section -->
+<div class="main">
+  <div class="left-col">
+    <h1 style="margin-bottom: 2rem;">Welcome to Muse</h1>
+    <p style="margin-bottom: 2rem;">
+      Explore our outstanding event management system. Browse our event catalogue to
+      find exciting events that <br>suits your interests. sign up now to enjoy seamless event <br>
+      management on this platform.
+    </p>
+    <button class="cta" style="margin-bottom: 2rem;">
+      Get started
+      <img src="./assets/arrow.svg" alt="arrrow" class="arrow">
+    </button>
+    <p class="bottom-note" style="font-size: 12px;">
+      Over 500+ users around the world. Join the team now and enjoy seamless event management.
+    </p>
   </div>
-  <div class="carousel-inner">
-    <div class="carousel-item active">
-      <img src="./assets/pic1.jpg" class="d-block w-100" alt="..." style="height: 500px;">
-      <div class="carousel-caption d-none d-md-block">
-        <h5>Parties</h5>
-        <p>Get updates on fun-filled events.</p>
-      </div>
+  <div class="right-col">
+    <div class="card card1">
+      
     </div>
-    <div class="carousel-item">
-      <img src="./assets/pic2.jpg" class="d-block w-100" alt="..." style="height: 500px;">
-      <div class="carousel-caption d-none d-md-block">
-        <h5>Conferences</h5>
-        <p>Get notified on formal settings.</p>
-      </div>
+    <div class="card card2">
+
     </div>
-    <div class="carousel-item">
-      <img src="./assets/pic3.jpg" class="d-block w-100" alt="..." style="height: 500px;">
-      <div class="carousel-caption d-none d-md-block">
-        <h5>Sports</h5>
-        <p>Get all track and field events.</p>
-      </div>
+    <div class="card card3">
+
     </div>
   </div>
-  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
-    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-    <span class="visually-hidden">Previous</span>
-  </button>
-  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
-    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-    <span class="visually-hidden" style="margin-top: 200px;">Next</span>
-  </button>
 </div>
 
-<div id="lottie-container">
-  <h1 class="main-caption" >Welcome, <span class="phrase">enjoy convenient <br> event management <br>with</span><span> Muse</span>.</h1>
+<!-- Credibility section -->
+<h1 style="font-size: 35px; text-align: center; margin-top: 2rem;">Platform Benefits</h1>
+<div class="main-container">
+  <div class="section1">
+    <img src="./assets/event-access.png" alt="" >
+    <p style="font-size: 12px; text-align: center;">
+      Access a 100+ events <br>on this platform.
+    </p>
+  </div>
+  <div class="section1">
+    <img src="./assets/people.png" alt="">
+    <p style="font-size: 12px; text-align: center;">
+      Reach a million<br>viewers.
+    </p>
+  </div>
+  <div class="section1">
+    <img src="./assets/track.png" alt="" >
+    <p style="font-size: 12px; text-align: center;">
+      Track event status <br>with ease
+    </p>
+  </div>
+  <div class="section1">
+    <img src="./assets/receipt.png" alt="" >
+    <p style="font-size: 12px; text-align: center;">
+      Quick transactions for<br>bookings and ticketing
+    </p>
+  </div>
 </div>
 <!-- Events section -->
-<div class="events-section">
-  <h3>Events</h3>
-  <div class="cards">
-    <div class="card" style="width: 18rem;">
-       <img src="./assets/cardimage1.jpg" class="card-img-top" alt="...">
-        <div class="card-body">
-        <h5 class="card-title">Card title</h5>
-        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-       <a href="#" class="btn btn-primary" style="color: white;">Book</a>
+<div class="events-slide">
+  <div class="slide-content">
+    <div class="card-wrapper">
+      <div class="cards">
+        <div class="image-content">
+          <span class="overlay"></span>
+
+          <div class="card-image">
+            <img src="./assets/cardimage1.jpg" alt="" class="card-img">
+          </div>
+        </div>
+        <div class="card-content">
+          <h2 class="title">Party</h2>
+          <p class="description">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo ea 
+          </p>
+
+          <button class="button">Get ticket <img src="./assets/arrow.svg" alt="arrrow" class="arrow"></button>
+        </div>
+      </div>
     </div>
-</div>
-    <div class="card" style="width: 18rem;">
-       <img src="./assets/cardimage1.jpg" class="card-img-top" alt="...">
-        <div class="card-body">
-        <h5 class="card-title">Card title</h5>
-        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-       <a href="#" class="btn btn-primary" style="color: white;">Book</a>
-    </div>
-</div>
-    <div class="card" style="width: 18rem;">
-       <img src="./assets/cardimage1.jpg" class="card-img-top" alt="...">
-        <div class="card-body">
-        <h5 class="card-title">Card title</h5>
-        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-       <a href="#" class="btn btn-primary" style="color: white;">Book</a>
-    </div>
-</div>
-    <div class="card" style="width: 18rem;">
-       <img src="./assets/cardimage1.jpg" class="card-img-top" alt="...">
-        <div class="card-body">
-        <h5 class="card-title">Card title</h5>
-        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-       <a href="#" class="btn btn-primary" style="color: white;">Book</a>
-    </div>
-</div>   
-</div>
+  </div>
 </div>
 <hr>
 <!-- Partners Section -->
@@ -141,7 +145,7 @@ import login from './components/login.vue'
 
 /* Navbar section */
 .navbar{
-  background-color: rgb(234, 238, 240);
+  background-color:rgb(235, 247, 235);
   padding: 0 10px 0 10px;
   align-items: center;
   justify-content: space-between; 
@@ -151,97 +155,187 @@ import login from './components/login.vue'
 a{
   text-decoration: none;
 }
-h1{
-  color: rgb(35, 152, 248);
+h2{
+  color: rgb(131, 138, 141);
 }
 .end{
   display: flex;
 }
-
-.sign-in{
-  margin-top: 3px;
-  font-size: 15px;
-  font-weight: bold;
+nav ul{
+  list-style-type: none;
+}
+nav ul li a{ 
+  margin-right: 15px;
+  font-size: 13px;
+  color: black;
+  font-weight: 600;
+  padding: 2px 5px;
+  position: relative;
+}
+nav ul li a::after {
+  content: ''; 
+  position: absolute; 
+  bottom: -5px; 
+  left: 0;
+  width: 100%;
+  height: 2px; 
+  background-color: black; 
+  transform: scaleX(0); 
+  transition: transform 0.3s ease; 
 }
 
-.sign-in a{
-  color: rgb(35, 152, 248);
+nav ul li a:hover::after {
+  transform: scaleX(1); 
 }
 
-.sign-in a:hover{
- color :rgb(23, 116, 192);
-}
-.btn{
-  color: rgb(35, 152, 248);
-  border-color: rgb(35, 152, 248) ;
-  font-size: 12px;
-  padding: 0 5px 0 5px;
-  border-radius: 12px;
-  font-weight: bold;
-}
-.btn:hover{
+
+/* Hero Section */
+ .main{
+  display: flex;
+  gap: 2rem;
+  background-color:rgb(235, 247, 235);
+  margin: 2rem;
+  padding: 20px;
+  border-radius: 20px;
+  justify-content: space-between; 
+ }
+ .cta{
+  background-color: black;
   color: white;
-}
-.btn2{
-  color: white;
-  background-color: rgb(35, 152, 248);
+  font-size: 13px;
+  font-weight: 100;
   border: none;
-  font-size: 12px;
-  padding: 0 5px 0 5px;
-  border-radius: 12px;
-  font-weight: bold;
-  margin-right: 5px;
+  padding: 3px 10px 3px 10px;
+  border-radius: 18px;
+ }
+ .arrow{
+  filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(0deg) brightness(100%) contrast(100%);
 }
-.btn2:hover{
-  background-color:rgb(23, 116, 192);
+.left-col{
+  text-align: center;
+  margin:  5em 0px 0px 10em;
 }
-/* Banner Section */
- .carousel-inner{
-  height: 500px;
-} 
-.carousel-item {
-  width: 100%;
-  height: 500px; 
+h1{
+  font-size: 5em;
+  font-weight: 800;
+}
+p{
+  font-size: 15px;
+  font-weight:300;
+  color: rgb(131, 138, 141);
 }
 
-.carousel-item img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover; 
-}
-/* welcome section */
-#lottie-container{
-  margin: 30px;
-  padding: 10px;
-}
-.main-caption{
-  font-weight: bolder;
-  font-size: 60px;  
-}
-.phrase{
-  color: rgba(83, 81, 81, 0.87);
-}
+
+ .right-col{
+  display: grid;
+  gap: .3em;
+  grid-template-columns: repeat(2, auto);
+  grid-template-areas: 
+      "left right"
+      "left bottom";
+ }
+
+ .card{
+  border-radius: .8em;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  align-items: end;
+  width: 10em;
+ }
+
+ .card1{
+  grid-area: left;
+  background-image: url('./assets/pic3.jpg');
+ }
+ .card2{
+  height: 10em;
+  background-image: url('./assets/pic1.jpg');
+ }
+ .card3{
+  height: 10em;
+  background-image: url('./assets/pic2.jpg');
+ }
+
+ /* credibility section */
+ strong{
+  text-align: center;
+ }
+ .main-container{
+  display: flex;
+  margin: 0 2rem 2rem 2rem;
+  padding: 2rem;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-evenly;
+ }
+ .section1{
+  display: flex;
+  flex-direction: column;
+  width: 250px;
+  height: 220px;
+  background-color: rgb(225, 238, 238);
+  border-radius: 50%; 
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-size: 24px;
+  margin: 10px;
+ }
 
 /* Events Section */
-h3{
-  color: rgba(83, 81, 81, 0.87);
-  text-align: center;
-  font-size: 2.5rem;
-  margin-bottom: 10px;
+.events-slide{
+  max-width: 1120px;
+  width: 100%;
+  background-color: grey;
+  padding: 40px 0;
 }
-.events-section{
-  margin: 30px;
-  padding: 10px;
+.slide-content{
+  margin: 0 40px;
 }
 .cards{
+  width: 200px;
+  border-radius: 25px;
+  background-color: rgb(225, 238, 238);
+}
+.image-content,
+.card-content{
   display: flex;
-  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px 14px;
 }
-.card{
-  margin: 10px;
+.image-content{
+  row-gap: 5px;
 }
-.card-body{
-  padding: 10px;
+.card-image{
+  position: relative;
+  height: 150px;
+  width: 150px;
+}
+
+.card-image .card-img{
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+.title{
+  font-size: 20px;
+  font-weight: 600;
+  color: black;
+}
+.description{
+  font-size: 13px;
+  text-align: center;
+}
+.button{
+  background-color: black;
+  color: white;
+  font-size: 13px;
+  font-weight: 100;
+  border: none;
+  padding: 1px 6px 1px 6px;
+  border-radius: 18px;
 }
 
 /* Partners */

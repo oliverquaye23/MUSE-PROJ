@@ -6,7 +6,7 @@
     <div class="body">
         <div class="container">
     <div class="header">
-        <img src="./assets/logos4.png" alt="logo">
+        <img src="~@/assets/logo-main.png" alt="logo"> 
        <header>Sign up</header>
     </div>
     <form >
@@ -63,9 +63,18 @@
     margin: 20px;
 }
 
+img{
+    width: 30px;
+    height: 30px;
+}
 .header{
+    display: flex;
+    flex-direction: column;
     font-weight: 700;
     font-size: 30px;
+    justify-content: center;
+    align-items: center;
+    margin-top: 15px;
 }
 
 label{

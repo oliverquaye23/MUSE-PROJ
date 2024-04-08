@@ -6,6 +6,7 @@
     <div class="body">
         <div class="container">
     <div class="header">
+        <img src="~@/assets/logo-main.png" alt="logo"> 
        <header>Login</header>
     </div>
     <form >
@@ -60,6 +61,11 @@
     display: flex;
     flex-direction: column;
     margin: 20px;
+}
+
+img{
+    width: 30px;
+    height: 30px;
 }
 
 .header{
