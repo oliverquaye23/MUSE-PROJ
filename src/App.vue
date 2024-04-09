@@ -228,7 +228,7 @@ p{
 
  .right-col{
   display: grid;
-  gap: .3em;
+  gap: .7em;
   grid-template-columns: repeat(2, auto);
   grid-template-areas: 
       "left right"
@@ -249,11 +249,9 @@ p{
   background-image: url('./assets/pic3.jpg');
  }
  .card2{
-  height: 10em;
   background-image: url('./assets/pic1.jpg');
  }
  .card3{
-  height: 10em;
   background-image: url('./assets/pic2.jpg');
  }
 
