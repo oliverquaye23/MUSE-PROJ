@@ -9,7 +9,7 @@ import login from './components/login.vue'
    <nav class="navbar">
   <div class="logo-section">
     <a class="navbar-brand" href="#">
-     <h2>Muse</h2> 
+     <img src="./assets/jerry.png" alt="logo" style="width: 40px; margin-left: 20px;">
     </a>
   </div>
   <div class="end">
@@ -82,33 +82,45 @@ import login from './components/login.vue'
   </div>
 </div>
 <!-- Events section -->
-<div class="events-slide">
-  <div class="slide-content">
-    <div class="card-wrapper">
-      <div class="cards">
-        <div class="image-content">
-          <span class="overlay"></span>
-
-          <div class="card-image">
-            <img src="./assets/cardimage1.jpg" alt="" class="card-img">
-          </div>
-        </div>
-        <div class="card-content">
-          <h2 class="title">Party</h2>
-          <p class="description">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo ea 
-          </p>
-
-          <button class="button">Get ticket <img src="./assets/arrow.svg" alt="arrrow" class="arrow"></button>
-        </div>
-      </div>
+<h1 style="font-size: 35px; text-align: center; margin-top: 2rem;">Events </h1>
+<div class="card-container">
+  <div class="cards">
+    <img src="./assets/cardimage1.jpg" alt="">
+    <div class="card-content">
+      <h3>Party</h3>
+      <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatibus quos illo,</p>
+      <a href="#" class="cta">Get ticket</a>
+    </div>
+  </div>
+  <div class="cards">
+    <img src="./assets/cardimage1.jpg" alt="">
+    <div class="card-content">
+      <h3>Party</h3>
+      <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatibus quos illo,</p>
+      <a href="#" class="cta">Get ticket</a>
+    </div>
+  </div>
+  <div class="cards">
+    <img src="./assets/cardimage1.jpg" alt="">
+    <div class="card-content">
+      <h3>Party</h3>
+      <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatibus quos illo,</p>
+      <a href="#" class="cta">Get ticket</a>
+    </div>
+  </div>
+  <div class="cards">
+    <img src="./assets/cardimage1.jpg" alt="">
+    <div class="card-content">
+      <h3>Party</h3>
+      <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatibus quos illo,</p>
+      <a href="#" class="cta">Get ticket</a>
     </div>
   </div>
 </div>
 <hr>
 <!-- Partners Section -->
 <div class="partners">
-  <h3>Partners</h3>
+  <h1 style="font-size: 35px; text-align: center; margin-top: 2rem;">Partners </h1>
   <div class="part">
     <div class="p1">
       <img src="./assets/logos1.png" alt="">
@@ -128,8 +140,12 @@ import login from './components/login.vue'
 
 <!-- Footer -->
 <footer>
-  <div class="content">
-    All rights reserved.&copy;2024
+  <div class="row-1">
+    <img src="./assets/jerry.png" alt="logo" style="width: 40px; margin: 20px;">
+    <div class="search">
+      <img src="./assets/search.png" alt="" class="search-img">
+      <input type="text" placeholder="Search">
+    </div>
   </div>
 </footer>
 
@@ -151,6 +167,7 @@ import login from './components/login.vue'
   justify-content: space-between; 
   display: flex;
 }
+
 
 a{
   text-decoration: none;
@@ -282,58 +299,36 @@ p{
  }
 
 /* Events Section */
-.events-slide{
-  max-width: 1120px;
-  width: 100%;
-  background-color: grey;
-  padding: 40px 0;
-}
-.slide-content{
-  margin: 0 40px;
+.card-container{
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-bottom: 100px;
 }
 .cards{
   width: 200px;
-  border-radius: 25px;
-  background-color: rgb(225, 238, 238);
+  background-color:rgb(235, 247, 235);
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+  margin: 20px;
 }
-.image-content,
-.card-content{
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 10px 14px;
-}
-.image-content{
-  row-gap: 5px;
-}
-.card-image{
-  position: relative;
-  height: 150px;
-  width: 150px;
-}
-
-.card-image .card-img{
-  height: 100%;
+.cards img{
   width: 100%;
-  object-fit: cover;
+  height: 170px;
 }
-.title{
-  font-size: 20px;
-  font-weight: 600;
-  color: black;
+.card-content{
+  padding: 16px;
 }
-.description{
-  font-size: 13px;
-  text-align: center;
+.card-content h3{
+  font-size: 28px;
+  margin-bottom: 8px;
 }
-.button{
-  background-color: black;
-  color: white;
-  font-size: 13px;
-  font-weight: 100;
-  border: none;
-  padding: 1px 6px 1px 6px;
-  border-radius: 18px;
+.card-content p{
+  color: #666;
+  font-size: 15px;
+  line-height: 1.3;
+  margin-bottom: 10px;
 }
 
 /* Partners */
@@ -352,8 +347,22 @@ footer{
   justify-content: center;
   height: 200px;
 }
-.content{
+.row-1{
+  display:flex;
+  justify-content: space-between;
+}
+.search{
+  margin: 20px;
+}
+.search-img{
+  filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(0deg) brightness(100%) contrast(100%);
+margin-right: 10px;
+}
+input{
+  background-color: transparent;
+  border: 1px solid;
   color: white;
-  text-align: center;
+  border-radius: 20px;
+  padding: 5px 10px;
 }
 </style>
