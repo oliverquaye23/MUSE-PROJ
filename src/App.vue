@@ -147,6 +147,15 @@ import login from './components/login.vue'
       <input type="text" placeholder="Search">
     </div>
   </div>
+  <hr>
+  <div class="row-2">
+    <ul>
+      <li><a href="#">Home</a></li>
+      <li><a href="#">About</a></li>
+      <li><a href="#">Events</a></li>
+      <li><a href="#">Contact</a></li>
+    </ul>
+  </div>
 </footer>
 
 
