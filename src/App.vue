@@ -190,7 +190,7 @@ nav ul li a:hover::after {
 
 
 /* Hero Section */
- .main{
+ /* .main{
   display: flex;
   gap: 2rem;
   background-color:rgb(235, 247, 235);
@@ -198,7 +198,7 @@ nav ul li a:hover::after {
   padding: 20px;
   border-radius: 20px;
   justify-content: space-between; 
- }
+ } */
  .cta{
   background-color: black;
   color: white;
