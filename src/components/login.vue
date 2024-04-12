@@ -20,7 +20,9 @@
         </div>
     </form>
     <div class="bottom-text">
-        <h4><a href="#">Sign Up</a></h4>
+        <h4>
+            <RouterLink to="/signup">Sign up<img src="~@/assets/sign-up.svg" alt="sign-up" style="width: 14px;"></RouterLink>
+        </h4>
     </div>
   </div> 
 </div>

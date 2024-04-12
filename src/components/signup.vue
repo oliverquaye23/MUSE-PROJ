@@ -20,7 +20,10 @@
         </div>
     </form>
     <div class="bottom-text">
-        <h4>Already have an account?<a href="#">login</a></h4>
+        <h4>
+            Already have an account?
+            <RouterLink to="/login">login<img src="~@/assets/sign-in.svg" alt="sign-in" style="width: 14px;"></RouterLink>
+        </h4>
     </div>
   </div> 
 </div>
