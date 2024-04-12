@@ -1,5 +1,11 @@
 <script setup>
+import { ref } from 'vue';
 import { RouterView, RouterLink } from 'vue-router';
+import signup from './signup.vue';
+
+
+
+
 </script>
 
 <template>
@@ -31,10 +37,11 @@ import { RouterView, RouterLink } from 'vue-router';
       find exciting events that <br>suits your interests. sign up now to enjoy seamless event <br>
       management on this platform.
     </p>
-    <button class="cta" style="margin-bottom: 2rem;">
-      Get started
-      <img src="~@/assets/arrow.svg" alt="arrrow" class="arrow">
+    <button  class="cta" style="margin-bottom: 2rem;">
+      <RouterLink to="/signup" style="color: white;">Get started<img src="~@/assets/arrow.svg" alt="arrrow" class="arrow"></RouterLink>
+      
     </button>
+    
     <p class="bottom-note" style="font-size: 12px;">
       Over 500+ users around the world. Join the team now and enjoy seamless event management.
     </p>
