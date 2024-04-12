@@ -1,5 +1,5 @@
 <script setup>
-
+import { RouterView, RouterLink } from 'vue-router';
 </script>
 
 <template>
@@ -8,15 +8,15 @@
    <nav class="navbar">
   <div class="logo-section">
     <a class="navbar-brand" href="#">
-     <img src="./assets/jerry.png" alt="logo" style="width: 40px; margin-left: 20px;">
+     <img src="~@/assets/jerry.png" alt="logo" style="width: 40px; margin-left: 20px;">
     </a>
   </div>
   <div class="end">
     <ul>
       <li>
-        <a href="#">Events <img src="./assets/Events.svg" alt="event icon" style="width: 14px;"></a>
-        <a href="#">Sign up<img src="./assets/sign-up.svg" alt="event icon" style="width: 14px;"></a>
-        <a href="#">Sign in<img src="./assets/sign-in.svg" alt="event icon" style="width: 14px;"></a>
+        <RouterLink to="/login">Events <img src="~@/assets/events.svg" alt="event icon" style="width: 14px;"></RouterLink>
+        <RouterLink to="/signup">Sign up<img src="~@/assets/sign-up.svg" alt="sign-up" style="width: 14px;"></RouterLink>
+        <RouterLink to="/login">Sign in<img src="~@/assets/sign-in.svg" alt="sign-in" style="width: 14px;"></RouterLink>
       </li>
     </ul>
   </div>
@@ -33,7 +33,7 @@
     </p>
     <button class="cta" style="margin-bottom: 2rem;">
       Get started
-      <img src="./assets/arrow.svg" alt="arrrow" class="arrow">
+      <img src="~@/assets/arrow.svg" alt="arrrow" class="arrow">
     </button>
     <p class="bottom-note" style="font-size: 12px;">
       Over 500+ users around the world. Join the team now and enjoy seamless event management.
@@ -56,25 +56,25 @@
 <h1 style="font-size: 35px; text-align: center; margin-top: 2rem;">Platform Benefits</h1>
 <div class="main-container">
   <div class="section1">
-    <img src="./assets/event-access.png" alt="" >
+    <img src="~@/assets/event-access.png" alt="" >
     <p style="font-size: 12px; text-align: center;">
       Access a 100+ events <br>on this platform.
     </p>
   </div>
   <div class="section1">
-    <img src="./assets/people.png" alt="">
+    <img src="~@/assets/people.png" alt="">
     <p style="font-size: 12px; text-align: center;">
       Reach a million<br>viewers.
     </p>
   </div>
   <div class="section1">
-    <img src="./assets/track.png" alt="" >
+    <img src="~@/assets/track.png" alt="" >
     <p style="font-size: 12px; text-align: center;">
       Track event status <br>with ease
     </p>
   </div>
   <div class="section1">
-    <img src="./assets/receipt.png" alt="" >
+    <img src="~@/assets/receipt.png" alt="" >
     <p style="font-size: 12px; text-align: center;">
       Quick transactions for<br>bookings and ticketing
     </p>
@@ -84,7 +84,7 @@
 <h1 style="font-size: 35px; text-align: center; margin-top: 2rem;">Events </h1>
 <div class="card-container">
   <div class="cards">
-    <img src="./assets/cardimage1.jpg" alt="">
+    <img src="~@/assets/cardimage1.jpg" alt="">
     <div class="card-content">
       <h3>Party</h3>
       <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatibus quos illo,</p>
@@ -92,7 +92,7 @@
     </div>
   </div>
   <div class="cards">
-    <img src="./assets/cardimage1.jpg" alt="">
+    <img src="~@/assets/cardimage1.jpg" alt="">
     <div class="card-content">
       <h3>Party</h3>
       <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatibus quos illo,</p>
@@ -100,7 +100,7 @@
     </div>
   </div>
   <div class="cards">
-    <img src="./assets/cardimage1.jpg" alt="">
+    <img src="~@/assets/cardimage1.jpg" alt="">
     <div class="card-content">
       <h3>Party</h3>
       <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatibus quos illo,</p>
@@ -108,7 +108,7 @@
     </div>
   </div>
   <div class="cards">
-    <img src="./assets/cardimage1.jpg" alt="">
+    <img src="~@/assets/cardimage1.jpg" alt="">
     <div class="card-content">
       <h3>Party</h3>
       <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatibus quos illo,</p>
@@ -122,16 +122,16 @@
   <h1 style="font-size: 35px; text-align: center; margin-top: 2rem;">Partners </h1>
   <div class="part">
     <div class="p1">
-      <img src="./assets/logos1.png" alt="">
+      <img src="~@/assets/logos1.png" alt="">
     </div>
     <div class="p1">
-      <img src="./assets/logos2.jpg" alt="">
+      <img src="~@/assets/logos2.jpg" alt="">
     </div>
     <div class="p1">
-      <img src="./assets/logos3.png" alt="">
+      <img src="~@/assets/logos3.png" alt="">
     </div>
     <div class="p1">
-      <img src="./assets/logos4.png" alt="">
+      <img src="~@/assets/logos4.png" alt="">
     </div>
 
   </div>
@@ -140,9 +140,9 @@
 <!-- Footer -->
 <footer>
   <div class="row-1">
-    <img src="./assets/jerry.png" alt="logo" style="width: 40px; margin: 20px;">
+    <img src="~@/assets/jerry.png" alt="logo" style="width: 40px; margin: 20px;">
     <div class="search">
-      <img src="./assets/search.png" alt="" class="search-img">
+      <img src="~@/assets/search.png" alt="" class="search-img">
       <input type="text" placeholder="Search">
     </div>
   </div>
@@ -262,13 +262,13 @@ p{
 
  .card1{
   grid-area: left;
-  background-image: url('./assets/pic3.jpg');
+  background-image: url("../assets/pic3.jpg");
  }
  .card2{
-  background-image: url('./assets/pic1.jpg');
+  background-image: url("../assets/pic1.jpg");
  }
  .card3{
-  background-image: url('./assets/pic2.jpg');
+  background-image: url('../assets/pic2.jpg');
  }
 
  /* credibility section */
